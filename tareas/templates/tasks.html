@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1 class="text-center">Task</h1>
+
+<ul>
+    {% for task in tasks %}
+    <a href="{% url 'detailTask' task.id %}"></a>
+    {% endfor %}
+</ul>
+
+{% endblock %}

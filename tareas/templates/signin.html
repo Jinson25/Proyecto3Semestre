@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<main class="container">
+    <div class="row">
+        {{error}}
+                <h1 class="text-center mt-5">Entra en tu cuenta de YourList</h1>
+        <div class="col-md-4 offset-md-4">
+            <form action="/signin/" method="POST" class="card card-body">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="username">Usuario:</label>
+                    <input type="text" name="username" id="username" class="form-control"
+                    placeholder="Escribe tu usuario">
+                </div>
+                <div class="mb-3">
+                    <label for="password1">Contraseña:</label>
+                    <input type="password" name="password" id="password" class="form-control"
+                    placeholder="Escribe tu contraseña">
+                </div>
+                <button class="btn btn-primary">Ingresar Cuenta</button>
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock %}
