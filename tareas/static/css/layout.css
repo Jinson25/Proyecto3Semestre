@@ -24,6 +24,15 @@
     color: #fff;
     font-size: 28px;
 }
+.logo{
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.font{
+    color: #fff;
+}
 span{
     color: #ea1538;
 }
@@ -56,10 +65,4 @@ nav ul li a:hover{
     margin-top: 10px;
     text-align: center;
     margin: 0 30px;
-}
-.logo{
-    display: flex;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
 }
